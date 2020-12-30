@@ -29,6 +29,8 @@ const config: NuxtConfig = {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://github.com/nuxt-community/svg-sprite-module
+    '@nuxtjs/svg-sprite',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -47,6 +49,10 @@ const config: NuxtConfig = {
 
   storybook: {
     stories: ['~/stories/**/*.stories.ts'],
+  },
+
+  svgSprite: {
+    // manipulate module options
   },
 }
 
