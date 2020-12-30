@@ -1,4 +1,6 @@
-export default {
+import { NuxtConfig } from '@nuxt/types'
+
+const config: NuxtConfig = {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'nuxt-svg-sprite-storybook-example',
@@ -42,4 +44,10 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  storybook: {
+    stories: ['~/stories/**/*.stories.ts'],
+  },
 }
+
+export default config
